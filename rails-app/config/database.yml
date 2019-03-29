@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  port: <%= ENV["DATABASE_PORT"] || '5432' %>
+  host: <%= ENV["DATABASE_HOST"] || 'localhost' %>
+  pool: 15
+
+development:
+  <<: *default
+  database: "ex_rails_app_development"
+
+test:
+  <<: *default
+  database: "ex_rails_app_test"
+
+production:
+  <<: *default
+  database: "ex_rails_app_production"
