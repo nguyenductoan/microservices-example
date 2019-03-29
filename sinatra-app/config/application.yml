@@ -1,0 +1,23 @@
+development:
+  DATABASE_ADAPTER: 'postgres'
+  DATABASE_HOST: 'localhost'
+  DATABASE_PORT: '5432'
+  DATABASE_USR: 'root'
+  DATABASE_PWD: 'root'
+  DATABASE_NAME: 'sinatra_app_development'
+
+test:
+  DATABASE_ADAPTER: 'postgres'
+  DATABASE_HOST: 'localhost'
+  DATABASE_PORT: '5432'
+  DATABASE_USR: 'root'
+  DATABASE_PWD: 'root'
+  DATABASE_NAME: 'sinatra_app_test'
+
+production:
+  DATABASE_ADAPTER: 'postgres'
+  DATABASE_HOST: 'localhost'
+  DATABASE_PORT: '5432'
+  DATABASE_USR: 'root'
+  DATABASE_PWD: 'root'
+  DATABASE_NAME: 'sinatra_app_production'
